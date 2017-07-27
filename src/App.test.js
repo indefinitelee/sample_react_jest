@@ -96,7 +96,9 @@ const data = {
     "next": "http://pokeapi.co/api/v2/pokemon/?offset=20"
 }
 
+const getPokemon = () => {}
+
 it('loads in pokemon list', () => {
-  const tree = renderer.create(<App data={data} />).toJSON();
+  const tree = renderer.create(<App data={data} getPokemon={getPokemon} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
