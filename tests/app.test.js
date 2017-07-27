@@ -1,5 +1,5 @@
 import React from 'react';
-import { App } from '../src/app';
+import { App } from './src/app';
 import renderer from 'react-test-renderer';
 
 const data = {
