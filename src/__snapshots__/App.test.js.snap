@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loads in pokemon list 1`] = `
+<div
+  className="pokeList"
+>
+  <h3>
+    Pokemon
+  </h3>
+  <div
+    className="pokemonNames"
+  >
+    <ul />
+  </div>
+</div>
+`;
