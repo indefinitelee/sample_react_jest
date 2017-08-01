@@ -28,13 +28,13 @@ class App extends Component {
 
   createPokemonElements() {
       return (
-      <div className='pokemonNames'>
-          <ul>
-              {this.state.pokemonArray.map((pokemon, i) => {
-                return <li key={i}>{pokemon.name}</li>
-              })}
-          </ul>
-        </div>
+        <div className='pokemonNames'>
+            <ul>
+                {this.state.pokemonArray.map((pokemon, i) => {
+                  return <li key={i}>{pokemon.name}</li>
+                })}
+            </ul>
+          </div>
         );
     };
 

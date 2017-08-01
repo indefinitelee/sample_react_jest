@@ -1,6 +1,6 @@
 import React from 'react';
 import { App } from './src/app';
-import renderer from 'react-test-renderer';
+// import renderer from 'react-test-renderer';
 
 const data = {
     "count": 811,
@@ -90,7 +90,9 @@ const data = {
     "next": "http://pokeapi.co/api/v2/pokemon/?offset=20"
 }
 
+const getPokemon = () => {}
+
 it('loads in pokemon list', () => {
-  const tree = renderer.create(<App data={data} />).toJSON();
+  const tree = renderer.create(<App getPokemon={getPokemon} data={data} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
